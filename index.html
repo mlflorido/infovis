@@ -21,11 +21,14 @@
 		  var url = "http://public.tableau.com/views/WorldIndicators/GDPpercapita";
 		  // An object that contains options specifying how to embed the viz
 		  var options = {
-		    width: '600px',
-		    height: '600px',
 		    hideTabs: true,
-		    hideToolbar: true,
-		  };
+		    height: 1000,
+		    width: 1200,
+		    onFirstInteraction: function() {
+			workbook = viz.getWorkbook();
+			activeSheet = workbook.getActiveSheet();
+			console.log("My dashboard is interactive");
+				  };
 		  viz = new tableau.Viz(placeholderDiv, url, options); 
 		}	
 	
