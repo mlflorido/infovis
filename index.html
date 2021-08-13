@@ -14,10 +14,8 @@
 	<div id="tableauViz"></div>
 	<script type="text/javascript">
 		let viz;
-
 		//Add Share Link to Tableau Public in here
-		const url = "https://public.tableau.com/views/Squirrels_15746293266160/Dashboard1?:display_count=y&:origin=viz_share_link";
-
+		const url = "http://public.tableau.com/views/WorldIndicators/GDPpercapita";
 		const vizContainer = document.getElementById('vizContainer');
 		const options = {
 		    hideTabs: true,
@@ -29,7 +27,6 @@
 			console.log("My dashboard is interactive");
 		    }
 		};
-
 		//create a function to generate the viz element
 		function initViz() {
 		    console.log('Executing the initViz function!');
